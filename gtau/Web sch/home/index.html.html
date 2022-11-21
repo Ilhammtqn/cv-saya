@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet" href="style.css.css">
+    <script src="https://kit.fontawesome.com/66e793ae36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="images/logo img.jpg" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Header -->
+        <div class="header-text">
+            <p>Wikrama Bogor Vocational School Students</p>
+            <h1>HI, I'm <span>Ilham Muttaqin</span><br>From Bogor</h1>
+        </div>
+       </div> 
+    </div>
+<!----------about-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.2.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Saya Sekolah di Wikrama di Jurusan Perancang Perangkat Lunak dan Gem</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skill')">Skill</p>
+                        <p class="tab-links " onclick="opentab('Education')">Education</p>
+
+                    </div>
+                    <div class="tab-contens" id="skills">
+                        <ul>
+                            <li><span>Perancang Web</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contens active-tab" id="Education">
+                        <ul>
+                            <li><span>2012-2019</span> SDN Sindangsari</li>
+                            <li><span>2019-2022</span> MTsN 1 Bogor</li>
+                            <li><span>2022-2025</span> SMK Wikrama</li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------services-------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-rectangle-code"></i>
+                <h2>Web Develop</h2>
+                <p>Pengembang web adalah seorang programmer yang mengkhususkan diri dalam, atau secara khusus terlibat dalam, pengembangan aplikasi World Wide Web menggunakan client–server model.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-rocket-launch"></i>
+                <h2>Web Design</h2>
+                <p>Web design adalah istilah mengenai desaign visual yang diterapkan kepada media digital yaitu website.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>  
+<!-- ----------Portofolio-------- -->
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work </h1>
+        <div class="work-list">
+            <div class="work">
+            <img src="images/Screenshot 2022-11-07 101619.png" >
+                <div class="layer">
+                    <h3>Portofolio </h3>
+                    <p>Mengenai Saya</p>
+                    <a href="Personal Web/index.html"><i class="fa-solid fa-crop"></i></a>
+                </div>
+            </div>
+            <div class="work">
+               <img src="images/Screenshot_20221102_094127.png" >
+                <div class="layer">
+                    <h3>WEB Sch </h3>
+                    <p>Imformasi Yang Berisikan Konten Yang Tersedia Di Sekolah Saya</p>
+                    <a href="Web sch/Home.html"><i class="fa-solid fa-crop"></i> </a>
+                    
+                </div>
+           
+            
+        </div>  
+
+    </div> 
+    <a href="#" class="btn">See More</a>
+</div>
+<!-- -------Contact-------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+         
+            <div class="social-icons">
+                <a target="_blank" href="https://www.instagram.com/figi.i2/?hl=id"><i class="fa-brands fa-square-instagram"></i></a>
+                <a target="_blank" href="https://api.whatsapp.com/send/?phone=6288801273347&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+                <a target="_blank" hresf="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a target="_blank" href="https://github.com/Ilhammtqn"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+            <a href="#" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact_right">
+            <form action="">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Mail" required>
+                <textarea name="massage"   rows="10" placeholder="Your Massage"></textarea>
+                <button type="submit" class="btn btn2">submit</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-brands fa-phoenix-squadron"></i>Copyright SMK Wikrama 2022. Made With Ilham Mutaqin</p>
+    </div>
+</div>
+    <script>
+        var tablinks= document.getElementsByClassName("tab-link")
+        var tabcontens= document.getElementsByClassName("tab-contens")
+        function opentab(tabname){
+            for(tablinks of tablinks){
+                tablink.classlist.remove("active-link")
+            }
+        }
+        for(tabconten of tabcontens  ){
+                tabconten.classlist.remove("active-tab")
+                
+
+                }
+  </script>
+</body>
+</html>
